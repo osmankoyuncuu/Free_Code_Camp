@@ -23,6 +23,7 @@
 #navbar ul li {
   border-top: 2px solid gray;
   padding: 1rem 0;
+  list-style-type: none;
 }
 .nav-link {
   text-decoration: none;
@@ -59,5 +60,27 @@
 @media screen and (min-width: 1350px) {
   #navbar {
     position: fixed;
+  }
+  #main-doc {
+  }
+}
+@media screen and (max-width: 1350px) {
+  #container {
+    flex-direction: column;
+  }
+  #navbar {
+    width: 100vw;
+    height: 300px;
+    overflow: auto;
+    border: 2px solid gray;
+    padding-bottom: 0;
+  }
+  #navbar header {
+    text-align: center;
+  }
+  #main-doc {
+    width: 100vw;
+    margin-left: 1rem;
+    padding-right: 4rem;
   }
 }
